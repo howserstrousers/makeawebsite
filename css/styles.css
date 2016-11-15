@@ -41,6 +41,11 @@
 			table {
 				border-collapse: collapse;
 				border-spacing: 0;
+		
+			}
+
+			.clearfix{
+				overflow: auto
 			}
 /*MOBILE*/
 
@@ -67,25 +72,41 @@ h3{
 	font-size:1rem
 }
 
+.header-wrapper{
+
+}
+
 #title{
 	width:100%;
 	height:100%;
 	margin:0 auto;
-	position:fixed;
+	padding-top:0;
 	top:0;
+	z-index:100;
+	cursor: pointer;
+	pointer-events:none;
+	text-align: center;
 }
 
 #title h1{
-	padding-bottom:3%;
+	text-decoration: underline;
+}
+
+.whenyouare{
+	margin:0 auto;
+	width:90%;
+	height:100%;
+	margin-top:15%;
+	margin-left: 5%;
+	line-height: 1.3rem;
 	text-align: center;
-	border-bottom: 2px solid green;
-	background-color: white;
 }
 
 .list{
+	margin:0 auto;
 	width:90%;
 	height:100%;
-	margin-top:20%;
+	margin-top:10%;
 	margin-left: 5%;
 }
 
@@ -130,10 +151,34 @@ h3{
 	opacity:1;
 }
 
+@media only screen and (min-width: 768px){
+.whenyouare{
+	margin-top: 10%
+}
+}
 
 
+@media only screen and (min-width: 1024px) {
+.whenyouare{
+	margin-top: 7%
+}
+
+.list{
+	margin-top:5%;
+}
+
+@media only screen and (min-width: 1200px){
+.list{
+	width:50%;
+	margin-left: 25%;
+	margin-top:5%;
+}
 
 
+}
+
+
+}
 
 
 
